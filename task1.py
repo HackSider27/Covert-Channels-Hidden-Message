@@ -24,7 +24,7 @@ distributed_intervals = []
 counts = []
 
 temp = 0
-while temp < 6:
+while temp < max(intervals) + 1:
     distributed_intervals.append(temp)
     counts.append(0)
     temp += 0.1
@@ -43,7 +43,7 @@ for i in range(len(intervals)):
 print(max(counts))
 
 fig, ax = plt.subplots()
-ax.bar(distributed_intervals, counts, width=0.3)
+ax.bar(distributed_intervals, counts, width=0.4)
 plt.show()
 
 # вероятность присутствия скрытого канала получилась равна 96% = (1 - 1 / 26) * 100

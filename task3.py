@@ -25,7 +25,7 @@ print(statistics.mean(intervals))
 
 covert_message = ''
 for i in range(len(intervals)):
-    if intervals[i] < 0.75:
+    if intervals[i] < statistics.mean(intervals):
         covert_message += '0'
     else:
         covert_message += '1'

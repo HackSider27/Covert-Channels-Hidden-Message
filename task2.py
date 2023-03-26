@@ -25,7 +25,7 @@ distributed_intervals = []
 counts = []
 
 temp = 0
-while temp < 3:
+while temp < max(intervals) + 1:
     distributed_intervals.append(temp)
     counts.append(0)
     temp += 0.1
